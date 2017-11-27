@@ -1,0 +1,9 @@
+query {
+	allSensors {
+			id
+			name
+      unit
+      factor
+			createdAt
+		}
+}

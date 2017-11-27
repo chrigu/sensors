@@ -1,0 +1,5 @@
+mutation sensorUpdate($id: ID!, $name: String!, $unit: String!, $factor: Float!) {
+  updateSensor(id: $id, name: $name, unit: $unit, factor: $factor) {
+    id
+  }
+}

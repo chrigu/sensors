@@ -1,0 +1,9 @@
+query ($id: ID!){
+	Sensor(id: $id) {
+			id
+			name
+			factor
+			unit
+			createdAt
+		}
+}

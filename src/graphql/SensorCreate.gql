@@ -1,0 +1,9 @@
+mutation ($name: String!, $unit: String!, $factor: Float!) {
+	createSensor (name: $name, unit: $unit, factor: $factor) {
+		id
+		name
+    unit
+    factor
+		createdAt
+	}
+}

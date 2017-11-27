@@ -1,0 +1,7 @@
+query {
+	allProjects {
+			id
+			name
+			createdAt
+		}
+}
