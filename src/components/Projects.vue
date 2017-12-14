@@ -11,7 +11,7 @@
     <md-layout>
       <md-list>
         <md-list-item v-for="project of projects">
-          <router-link :to="{ name: 'updateProject', params: { projectId: project.id }}">{{project.name}}</router-link>
+          <router-link :to="{ name: 'detailProject', params: { projectId: project.id }}">{{project.name}}</router-link>
         </md-list-item>
       </md-list>
     </md-layout>
@@ -29,11 +29,6 @@ export default {
   data () {
     return {
       projects: []
-    }
-  },
-  methods: {
-    test () {
-      console.log('test')
     }
   },
   apollo: {

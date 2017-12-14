@@ -1,0 +1,17 @@
+query ($id: ID!){
+	Project(id: $id) {
+			id
+			name
+			createdAt
+      sensors {
+        id
+        name
+        unit
+        sensorData(last: 1) {
+          id
+          value
+          createdAt
+        }
+      }
+		}
+}

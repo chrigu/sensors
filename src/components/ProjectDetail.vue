@@ -1,8 +1,8 @@
 <template>
   <div>
     <main-menu>
-      <md-button @click="test" slot="add-link" class="md-icon-button md-raised">
-        <md-icon>add</md-icon>
+      <md-button slot="add-link" class="md-icon-button md-raised">
+        <md-icon>edit</md-icon>
       </md-button>
     </main-menu>
     <md-layout>
@@ -14,7 +14,7 @@
 <script>
 
 import MainMenu from '@/components/MainMenu'
-import PROJECT_BY_ID from '../graphql/ProjectById.gql'
+import PROJECT_DETAILS from '../graphql/ProjectDetails.gql'
 
 export default {
   name: 'ProjectDetail',
@@ -27,7 +27,7 @@ export default {
   apollo: {
     project () {
       return {
-        query: PROJECT_BY_ID,
+        query: PROJECT_DETAILS,
         variables: {
           id: this.$route.params.projectId
         },
