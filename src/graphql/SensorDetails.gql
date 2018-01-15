@@ -1,0 +1,14 @@
+query ($id: ID!){
+	Sensor(id: $id) {
+      id
+      name
+      unit
+      factor
+			createdAt
+      sensorData(orderBy: createdAt_DESC) {
+        id
+        value
+        createdAt
+      }
+		}
+}

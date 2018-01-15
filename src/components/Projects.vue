@@ -1,22 +1,25 @@
 <template>
   <div>
-    <main-menu>
-      <md-button @click="test" slot="add-link" class="md-icon-button md-raised">
-        <md-icon>add</md-icon>
-      </md-button>
-    </main-menu>
-    <md-layout>
+    <div class="md-layout">
       <h1>Projects</h1>
-    </md-layout>
-    <md-layout>
+    </div>
+    <div class="md-layout">
+      <router-link :to="{name: 'addProject' }">
+        <md-button class="md-raised md-primary">
+          Add Project
+        </md-button>
+      </router-link>
+    </div>
+    <div class="md-layout">
       <md-list>
-        <md-list-item v-for="project of projects">
+        <md-list-item v-for="project of projects" :key="project.id">
           <router-link :to="{ name: 'detailProject', params: { projectId: project.id }}">{{project.name}}</router-link>
         </md-list-item>
       </md-list>
-    </md-layout>
+    </div>
   </div>
 </template>
+
 
 <script>
 

@@ -4,13 +4,13 @@
     <div class="sensors">
       <h1>Sensors</h1>
     </div>
-    <md-layout>
+    <div class="md-layout">
       <md-list>
-        <md-list-item v-for="sensor of sensors">{{sensor.name}} - {{sensor.unit}}
+        <md-list-item v-for="sensor of sensors" :key="sensor.id">{{sensor.name}} - {{sensor.unit}}
           <router-link :to="{ name: 'updateSensor', params: { sensorId: sensor.id }}">{{sensor.name}}</router-link>
         </md-list-item>
       </md-list>
-    </md-layout>
+    </div>
   </div>
 </template>
 

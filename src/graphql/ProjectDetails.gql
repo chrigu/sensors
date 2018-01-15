@@ -7,7 +7,8 @@ query ($id: ID!){
         id
         name
         unit
-        sensorData(last: 1) {
+				factor
+        sensorData(first: 10, orderBy: createdAt_DESC) {
           id
           value
           createdAt

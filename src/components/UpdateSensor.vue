@@ -1,9 +1,8 @@
 <template>
 <div>
-  <MainMenu />
-  <md-layout>
+  <div class="md-layout">
     <h1>Edit Sensor</h1>
-  </md-layout>
+  </div>
   <SensorForm v-if="!disabled" :sensor="sensor" :disabled="disabled" @submitForm="updateSensor"/>
 </div>
 </template>

@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <router-view/>
+    <MainComponent />
   </div>
 </template>
 
 <script>
 
+import MainComponent from '@/components/MainComponent'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {MainComponent}
 }
 </script>
-
-<style lang="scss">
-@import "~vue-material/dist/vue-material.css";
-
-</style>

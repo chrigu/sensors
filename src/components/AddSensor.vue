@@ -1,9 +1,9 @@
 <template>
 <div>
   <MainMenu />
-  <md-layout>
+  <div class="md-layout">
     <h1>Add Sensor</h1>
-  </md-layout>
+  </div>
   <SensorForm  :sensor="{}" :disabled="disabled" @submitForm="createSensor"/>
 </div>
 </template>

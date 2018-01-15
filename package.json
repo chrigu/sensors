@@ -19,12 +19,16 @@
     "apollo-link-http": "^1.1.0",
     "apollo-link-ws": "^1.0.0",
     "apollo-utilities": "^1.0.1",
+    "chart.js": "^2.7.1",
+    "chartist": "^0.11.0",
     "graphql": "^0.11.7",
     "graphql-tag": "^2.5.0",
+    "moment": "^2.20.0",
     "vee-validate": "^2.0.0-rc.21",
     "vue": "^2.5.2",
     "vue-apollo": "^3.0.0-alpha.2",
-    "vue-material": "^0.8.1",
+    "vue-echarts": "^2.6.0",
+    "vue-material": "^1.0.0-beta-7",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

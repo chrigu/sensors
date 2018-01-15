@@ -1,9 +1,8 @@
 <template>
 <div>
-  <MainMenu />
-  <md-layout>
+  <div class="md-layout">
     <h1>Add Project</h1>
-  </md-layout>
+  </div>
   <ProjectForm :project="{}" :disabled="disabled" @submitForm="addProject"/>
 </div>
 </template>

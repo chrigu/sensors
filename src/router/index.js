@@ -7,6 +7,7 @@ import AddSensor from '@/components/AddSensor'
 import UpdateSensor from '@/components/UpdateSensor'
 import UpdateProject from '@/components/UpdateProject'
 import ProjectDetail from '@/components/ProjectDetail'
+import SensorDetail from '@/components/SensorDetail'
 
 Vue.use(Router)
 
@@ -15,7 +16,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Projects',
+      name: 'projects',
       component: Projects
     },
     {
@@ -47,6 +48,11 @@ export default new Router({
       path: '/sensor/:sensorId',
       name: 'updateSensor',
       component: UpdateSensor
+    },
+    {
+      path: '/sensor/:sensorId/detail',
+      name: 'sensorDetails',
+      component: SensorDetail
     }
   ]
 })

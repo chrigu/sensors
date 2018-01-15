@@ -1,7 +1,0 @@
-mutation ($name: String!) {
-	createProject (name: $name) {
-		id
-		name
-		createdAt
-	}
-}
